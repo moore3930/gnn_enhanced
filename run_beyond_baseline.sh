@@ -1,22 +1,3 @@
-#! /bin/bash
-
-#SBATCH --partition=gpu
-#SBATCH --gres=gpu:2
-#SBATCH --ntasks=1
-#SBATCH --nodelist=ilps-cn117
-#SBATCH --exclude=ilps-cn111
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=32G
-#SBATCH --time=2-10
-##SBATCH --begin=now+1minute
-#SBATCH --mail-type=BEGIN
-#SBATCH --mail-user=d.wu@uva.nl
-
-
-#SBATCH -o /home/dwu/workplace/logs/beyond_multi/OPUS/out.gnn_enhanced.o
-#SBATCH -e /home/dwu/workplace/logs/beyond_multi/OPUS/err.gnn_enhancede.e
-
-
 export PATH=/home/diwu/anaconda3/bin:$PATH
 source activate py38cuda11
 export CUDA_HOME="/usr/local/cuda-11.0"
