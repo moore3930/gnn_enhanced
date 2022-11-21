@@ -1,0 +1,112 @@
+Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='iwslt14_databin', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='en', srcdict='dict.txt', suppress_crashes=False, target_lang='ar', task='translation', tensorboard_logdir=None, testpref='test.en-ar.spm', tgtdict='dict.txt', threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='train.en-ar.spm', use_plasma_view=False, user_dir=None, validpref='valid.en-ar.spm', wandb_project=None, workers=70)
+[en] Dictionary: 30001 types
+[en] train.en-ar.spm.en: 139748 sents, 3517500 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] valid.en-ar.spm.en: 6352 sents, 160024 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] test.en-ar.spm.en: 5357 sents, 128603 tokens, 0.0% replaced (by <unk>)
+[ar] Dictionary: 30001 types
+[ar] train.en-ar.spm.ar: 139748 sents, 3943453 tokens, 0.0% replaced (by <unk>)
+[ar] Dictionary: 30001 types
+[ar] valid.en-ar.spm.ar: 6352 sents, 179387 tokens, 0.0% replaced (by <unk>)
+[ar] Dictionary: 30001 types
+[ar] test.en-ar.spm.ar: 5357 sents, 135763 tokens, 0.00663% replaced (by <unk>)
+Wrote preprocessed data to iwslt14_databin
+Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='iwslt14_databin', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='en', srcdict='dict.txt', suppress_crashes=False, target_lang='de', task='translation', tensorboard_logdir=None, testpref='test.en-de.spm', tgtdict='dict.txt', threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='train.en-de.spm', use_plasma_view=False, user_dir=None, validpref='valid.en-de.spm', wandb_project=None, workers=70)
+[en] Dictionary: 30001 types
+[en] train.en-de.spm.en: 160239 sents, 3987735 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] valid.en-de.spm.en: 7283 sents, 180655 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] test.en-de.spm.en: 6750 sents, 159344 tokens, 0.00314% replaced (by <unk>)
+[de] Dictionary: 30001 types
+[de] train.en-de.spm.de: 160239 sents, 4300805 tokens, 0.0% replaced (by <unk>)
+[de] Dictionary: 30001 types
+[de] valid.en-de.spm.de: 7283 sents, 194566 tokens, 0.0% replaced (by <unk>)
+[de] Dictionary: 30001 types
+[de] test.en-de.spm.de: 6750 sents, 171807 tokens, 0.0256% replaced (by <unk>)
+Wrote preprocessed data to iwslt14_databin
+Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='iwslt14_databin', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='en', srcdict='dict.txt', suppress_crashes=False, target_lang='es', task='translation', tensorboard_logdir=None, testpref='test.en-es.spm', tgtdict='dict.txt', threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='train.en-es.spm', use_plasma_view=False, user_dir=None, validpref='valid.en-es.spm', wandb_project=None, workers=70)
+[en] Dictionary: 30001 types
+[en] train.en-es.spm.en: 169028 sents, 4236601 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] valid.en-es.spm.en: 7683 sents, 192855 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] test.en-es.spm.en: 5593 sents, 133536 tokens, 0.0% replaced (by <unk>)
+[es] Dictionary: 30001 types
+[es] train.en-es.spm.es: 169028 sents, 4393378 tokens, 0.000114% replaced (by <unk>)
+[es] Dictionary: 30001 types
+[es] valid.en-es.spm.es: 7683 sents, 200637 tokens, 0.0% replaced (by <unk>)
+[es] Dictionary: 30001 types
+[es] test.en-es.spm.es: 5593 sents, 135896 tokens, 0.0169% replaced (by <unk>)
+Wrote preprocessed data to iwslt14_databin
+Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='iwslt14_databin', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='en', srcdict='dict.txt', suppress_crashes=False, target_lang='fa', task='translation', tensorboard_logdir=None, testpref='test.en-fa.spm', tgtdict='dict.txt', threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='train.en-fa.spm', use_plasma_view=False, user_dir=None, validpref='valid.en-fa.spm', wandb_project=None, workers=70)
+[en] Dictionary: 30001 types
+[en] train.en-fa.spm.en: 89230 sents, 2205652 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] valid.en-fa.spm.en: 4055 sents, 100036 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] test.en-fa.spm.en: 4244 sents, 103055 tokens, 0.0% replaced (by <unk>)
+[fa] Dictionary: 30001 types
+[fa] train.en-fa.spm.fa: 89230 sents, 2624383 tokens, 0.0% replaced (by <unk>)
+[fa] Dictionary: 30001 types
+[fa] valid.en-fa.spm.fa: 4055 sents, 119191 tokens, 0.0% replaced (by <unk>)
+[fa] Dictionary: 30001 types
+[fa] test.en-fa.spm.fa: 4244 sents, 136408 tokens, 0.0% replaced (by <unk>)
+Wrote preprocessed data to iwslt14_databin
+Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='iwslt14_databin', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='en', srcdict='dict.txt', suppress_crashes=False, target_lang='he', task='translation', tensorboard_logdir=None, testpref='test.en-he.spm', tgtdict='dict.txt', threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='train.en-he.spm', use_plasma_view=False, user_dir=None, validpref='valid.en-he.spm', wandb_project=None, workers=70)
+[en] Dictionary: 30001 types
+[en] train.en-he.spm.en: 144345 sents, 3565941 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] valid.en-he.spm.en: 6561 sents, 161725 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] test.en-he.spm.en: 5594 sents, 133437 tokens, 0.0% replaced (by <unk>)
+[he] Dictionary: 30001 types
+[he] train.en-he.spm.he: 144345 sents, 3834753 tokens, 0.0% replaced (by <unk>)
+[he] Dictionary: 30001 types
+[he] valid.en-he.spm.he: 6561 sents, 174142 tokens, 0.0% replaced (by <unk>)
+[he] Dictionary: 30001 types
+[he] test.en-he.spm.he: 5594 sents, 136749 tokens, 0.0% replaced (by <unk>)
+Wrote preprocessed data to iwslt14_databin
+Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='iwslt14_databin', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='en', srcdict='dict.txt', suppress_crashes=False, target_lang='it', task='translation', tensorboard_logdir=None, testpref='test.en-it.spm', tgtdict='dict.txt', threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='train.en-it.spm', use_plasma_view=False, user_dir=None, validpref='valid.en-it.spm', wandb_project=None, workers=70)
+[en] Dictionary: 30001 types
+[en] train.en-it.spm.en: 167195 sents, 4205823 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] valid.en-it.spm.en: 7599 sents, 190995 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] test.en-it.spm.en: 5553 sents, 132270 tokens, 0.0% replaced (by <unk>)
+[it] Dictionary: 30001 types
+[it] train.en-it.spm.it: 167195 sents, 4507772 tokens, 0.0% replaced (by <unk>)
+[it] Dictionary: 30001 types
+[it] valid.en-it.spm.it: 7599 sents, 204804 tokens, 0.0% replaced (by <unk>)
+[it] Dictionary: 30001 types
+[it] test.en-it.spm.it: 5553 sents, 137156 tokens, 0.00146% replaced (by <unk>)
+Wrote preprocessed data to iwslt14_databin
+Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='iwslt14_databin', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='en', srcdict='dict.txt', suppress_crashes=False, target_lang='nl', task='translation', tensorboard_logdir=None, testpref='test.en-nl.spm', tgtdict='dict.txt', threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='train.en-nl.spm', use_plasma_view=False, user_dir=None, validpref='valid.en-nl.spm', wandb_project=None, workers=70)
+[en] Dictionary: 30001 types
+[en] train.en-nl.spm.en: 153590 sents, 3824802 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] valid.en-nl.spm.en: 6981 sents, 176290 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] test.en-nl.spm.en: 5389 sents, 128811 tokens, 0.0% replaced (by <unk>)
+[nl] Dictionary: 30001 types
+[nl] train.en-nl.spm.nl: 153590 sents, 3929598 tokens, 0.0% replaced (by <unk>)
+[nl] Dictionary: 30001 types
+[nl] valid.en-nl.spm.nl: 6981 sents, 180677 tokens, 0.0% replaced (by <unk>)
+[nl] Dictionary: 30001 types
+[nl] test.en-nl.spm.nl: 5389 sents, 130280 tokens, 0.00307% replaced (by <unk>)
+Wrote preprocessed data to iwslt14_databin
+Namespace(aim_repo=None, aim_run_hash=None, align_suffix=None, alignfile=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='iwslt14_databin', dict_only=False, empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_file=None, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, on_cpu_convert_precision=False, only_source=False, optimizer=None, padding_factor=8, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='en', srcdict='dict.txt', suppress_crashes=False, target_lang='pl', task='translation', tensorboard_logdir=None, testpref='test.en-pl.spm', tgtdict='dict.txt', threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='train.en-pl.spm', use_plasma_view=False, user_dir=None, validpref='valid.en-pl.spm', wandb_project=None, workers=70)
+[en] Dictionary: 30001 types
+[en] train.en-pl.spm.en: 128410 sents, 3110876 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] valid.en-pl.spm.en: 5836 sents, 142333 tokens, 0.0% replaced (by <unk>)
+[en] Dictionary: 30001 types
+[en] test.en-pl.spm.en: 5462 sents, 130140 tokens, 0.0% replaced (by <unk>)
+[pl] Dictionary: 30001 types
+[pl] train.en-pl.spm.pl: 128410 sents, 3450739 tokens, 2.9e-05% replaced (by <unk>)
+[pl] Dictionary: 30001 types
+[pl] valid.en-pl.spm.pl: 5836 sents, 158463 tokens, 0.000631% replaced (by <unk>)
+[pl] Dictionary: 30001 types
+[pl] test.en-pl.spm.pl: 5462 sents, 134287 tokens, 0.0491% replaced (by <unk>)
+Wrote preprocessed data to iwslt14_databin
